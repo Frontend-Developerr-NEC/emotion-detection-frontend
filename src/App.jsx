@@ -6,7 +6,8 @@ import {
   Settings, Activity, History, Zap, Monitor
 } from 'lucide-react';
 
-const API_BASE = "http://localhost:8001";
+// const API_BASE = "http://localhost:8001";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8001";
 
 function App() {
   const [cameraIndex, setCameraIndex] = useState(0);
